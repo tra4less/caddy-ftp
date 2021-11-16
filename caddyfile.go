@@ -1,7 +1,6 @@
 package ftp
 
 import (
-	"strconv"
 	"time"
 
 	"github.com/caddyserver/caddy/v2"
@@ -50,27 +49,12 @@ func (h4f *HTTP4Ftp) UnmarshalCaddyfile(d *caddyfile.Dispenser) (err error) {
 					return err
 				}
 			case "disable_epsv":
-				if !d.NextArg() {
-					return d.ArgErr()
-				}
-				if h4f.DisabledEPSV, err = strconv.ParseBool(d.Val()); err != nil {
-					return err
-				}
+				h4f.DisabledEPSV = true
 			case "disable_mlsd":
-				if !d.NextArg() {
-					return d.ArgErr()
-				}
-				if h4f.DisabledMLSD, err = strconv.ParseBool(d.Val()); err != nil {
-					return err
-				}
+				h4f.DisabledMLSD = true
 
 			case "disable_utf8":
-				if !d.NextArg() {
-					return d.ArgErr()
-				}
-				if h4f.DisableUTF8, err = strconv.ParseBool(d.Val()); err != nil {
-					return err
-				}
+				h4f.DisableUTF8 = true
 			}
 		}
 	}
