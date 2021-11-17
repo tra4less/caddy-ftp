@@ -18,6 +18,9 @@ access ftp through caddy
             addr test.rebex.net:21
             user demo
             pass password
+            # dial_timeout 3s
+            # disable_epsv
+            # disable_utf8
         }
     }
     # curl localhost:80/abc/pub/example/imap-console-client.png

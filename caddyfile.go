@@ -50,6 +50,7 @@ func (h4f *HTTP4Ftp) UnmarshalCaddyfile(d *caddyfile.Dispenser) (err error) {
 				}
 			case "disable_epsv":
 				h4f.DisabledEPSV = true
+
 			case "disable_mlsd":
 				h4f.DisabledMLSD = true
 
