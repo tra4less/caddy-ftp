@@ -6,7 +6,7 @@ import (
 	// plug in Caddy modules here
 	_ "github.com/caddyserver/caddy/v2/modules/standard"
 
-	_ "github.com/n0trace/caddy-ftp"
+	_ "github.com/tra4less/caddy-ftp"
 )
 
 func main() {

@@ -42,7 +42,7 @@ linters:
 
 linters-settings:
   goimports:
-    local-prefixes: github.com/n0trace/caddy-ftp
+    local-prefixes: github.com/tra4l4ss/caddy-ftp
   govet:
     check-shadowing: true
   whitespace:

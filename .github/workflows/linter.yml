@@ -16,7 +16,7 @@ on:
 
 jobs:
   lint:
-    if: github.repository == 'n0trace/caddy-ftp'
+    if: github.repository == 'tra4l4ss/caddy-ftp'
     runs-on: ubuntu-latest
     steps:
       - name: Set up Go 1.x
